@@ -1,0 +1,73 @@
+h2 {
+  margin:20px;
+}
+h4 {
+  font-weight:bold;
+}
+form {
+  display:inline-block;
+}
+input[type="checkbox"] {
+  height:17px;
+  border:1px solid #3989e3;
+  border-radius:0px;
+}
+
+.margin-top {
+  margin-top:50px;
+}
+
+.display-inline {
+  display:inline-block;
+  margin:10px;
+}
+
+.btn {
+  width:100%;
+}
+.btn-group.open > button < ul {
+  left:0;
+  right:0;
+  width:100%;
+}
+.btn:focus{
+  background-color:#666666;
+  outline:8px solid #efefef;
+}
+
+.dropdown {
+  position:static;
+}
+.dropdown-toggle{
+  border:0px transparent;
+  height:75px;
+}
+.dropdown-menu {
+  width:100%;
+  text-align:center;
+}
+.dropdown-menu>li {
+  display:inline-block;
+}
+.dropdown-button {
+  width:10%;
+  display:inline-block;
+  float:right;
+  margin:10px;
+  margin-top:40px;
+}
+
+.form-control {
+  margin-bottom:10px;
+}
+
+.panel-body {
+  background-color:#efefef;
+  width:96%;
+  margin:5 auto;
+  float:none;
+}
+
+
+
+
