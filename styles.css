@@ -7,34 +7,89 @@ h4 {
 form {
   display:inline-block;
 }
-input[type="checkbox"] {
-  height:17px;
-  border:1px solid #3989e3;
-  border-radius:0px;
+a{
+  color:white;
+}
+a:hover {
+  color:white;
 }
 
+/*nav*/
+.navbar-brand {
+  padding:5px;
+  width:144px;
+}
+#heartland-logo {
+    height:65px;
+    display:block;
+    margin:-13px;
+}
+.logo {
+  height:45px;
+  padding:5px;
+  margin-left:10px;
+}
+
+/*dashboard*/
 .margin-top {
-  margin-top:50px;
+  margin-top:15px;
 }
-
-.display-inline {
-  display:inline-block;
-  margin:10px;
-}
-
 .btn {
   width:100%;
+}
+.btn-group {
+  padding:5px;
 }
 .btn-group.open > button < ul {
   left:0;
   right:0;
   width:100%;
 }
-.btn:focus{
-  background-color:#666666;
-  outline:8px solid #efefef;
+.prettycheckbox>a.checked {
+  background-position: 0 -60px;
+}
+.checkbox input[type=checkbox] {
+position:absolute;
+margin-left:-20px;
+}
+.prettycheckbox>a {
+background:url(images/checkbox-sprites@1x.png);
+}
+.checkbox label {
+  padding-left:0px;
+  cursor:pointer;
+  color:white;
+  font-size:17px;
+}
+.prettycheckbox label {
+  display:inline-block;
+  max-width:100%;
+  margin:3px 0px;
+}
+.button {
+  height:90px;
+}
+.nav-tabs {
+  background:transparent;
+  border:none;
+}
+.nav-tabs > li > a {
+  padding:18px 23px;
+  border:0px solid transparent;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  outline-style:solid;
+  outline-offset: 0px;
+  outline-color: #efefef;
+  outline-width: 10px;
+  border:0px solid transparent;
 }
 
+/*expanded content*/
+.display-inline {
+  display:inline-block;
+  margin:10px;
+}
 .dropdown {
   position:static;
 }
@@ -56,18 +111,43 @@ input[type="checkbox"] {
   margin:10px;
   margin-top:40px;
 }
-
 .form-control {
   margin-bottom:10px;
 }
-
 .panel-body {
   background-color:#efefef;
-  width:96%;
-  margin:5 auto;
   float:none;
+  margin-top:10px;
 }
+#myDropdown1 {
+  background-color:#184b86;
+} 
+#myDropdown2 {
+  background-color:#3989e3;
+}
+#myDropdown3 {
+  background-color:#85c4b9;
+} 
+#myDropdown4 {
+  background-color:#36b46e;
+} 
 
-
-
-
+/*modal*/
+.well {
+  padding:25px;
+  color:white;
+  height:86px;
+  background-color:#36b46e;
+}
+.well p {
+  display:inline-block;
+  margin-top:3px;
+  font-size:18px;
+}
+button.close {
+  margin-top:3px;
+  font-weight:bold;
+  text-shadow:0 1px 0 #fff;
+  opacity:.2;
+  font-family:sans-serif;
+}

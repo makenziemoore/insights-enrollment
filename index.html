@@ -6,12 +6,9 @@
       <script typ="text/javascript" src="jquery.js"></script>
       <script typ="text/javascript" src="bootstrap.js"></script>
       <script src="dropdown.js"></script>
-      <style>
-        body{
-          background:#333;
-        }
-      </style>
+
   </head> 
+  
    
 <body>
   <!--NAV-->
@@ -19,127 +16,109 @@
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="#">
-          <img alt="Brand" src="...">
+          <img alt="Brand" id="heartland-logo" src="images/HlandWHITERGBtransparent.png">
         </a>
-        <p class="navbar-text">Signed in as Mark Otto</p>
+          <img alt="Brand" class="logo" src="images/XenialAnalytics-logo-color.png">
       </div>
     </div>
 </nav>
+
+<!-- collapsed alerts-->
+<!-- enroll -->
+<div class="collapse" id="collapseExample" role="alert">
+  <div class="well text-center">
+    <!--
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       viewBox="0 0 300 300" style="enable-background:new 0 0 300 300; width:30px;" xml:space="preserve">
+    <style type="text/css">
+      .st0{fill:#36B46E;}
+    </style>
+    <g id="XMLID_2_">
+      <path id="XMLID_3_" class="st0" d="M169.6,26.6v98.1h94V167h-94v99h-44.1v-99h-94v-42.3h94V26.6H169.6z"/>
+    </g>
+  </svg>  -->
+    <p>Congratulations! You have successfully enrolled merchant in this program</p>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      x
+    </button>
+  </div>
+</div>
+<!-- unenroll -->
+<div class="collapse" id="collapseExample">
+  <div class="well">
+    You have unenrolled merchant from this program
+  </div>
+</div>
+
+
 <!--DASHBOARD-->
+
 <div class="container margin-top">
-  <div class="row">
-    <h2>Enrollment</h2>
-    <div class="btn-group btn-group-justified col-md-12" id="accordion" role="tablist" aria-multiselectable="true">
-      <div class="btn-group col-md-12" role="group">
-        <button id="myDropdown" type="button" class="collapsed btn btn-default btn-lg btn-block dropdown-toggle col-md-3"data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> 
-          <input type="checkbox" class="prettyCheckable checked" checked id="blankCheckbox" value="option1" aria-label="...">Xenial Analytics</button>  
-      </div>
-      <div class="btn-group col-md-12" role="group">
-        <button id="myDropdown" type="button" class="collapsed btn btn-default btn-lg dropdown-toggle col-md-3" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">    
-          <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-          Customer Intelligence</button>
-      </div>
-      <div class="btn-group col-md-12" role="group">
-        <button id="myDropdown" type="button" class="collapsed btn btn-default btn-lg dropdown-toggle col-md-3" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          <input type="checkbox" class="checked" checked id="blankCheckbox" value="option1" aria-label="...">
-          Email Marketing</button>    
-      </div>
-      <div class="btn-group col-md-12" role="group">
-        <button id="myDropdown" type="button" class="collapsed btn btn-default btn-lg dropdown-toggle col-md-3" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-          Mid-Grade</button>  
-      </div>
-    </div>
-  </div>
-</div>
+ <div class="row">
+   <h2>Enrollment</h2>
+ <ul class="nav nav-tabs" role="tablist">
+   <li role="tablist" id="accordian" aria-multiselectable="true" class="col-md-3 col-sm-6 col-xs-12"  data-toggle="collapse" data-target="#collapse">
+     <a href="#collapse" aria-controls="collapse" role="button" data-toggle="tab" id="myDropdown1" class="button">
+       <div class="checkbox has-pretty-child">
+       <div class="clearfix prettycheckbox labelright blue">
+         <input type="checkbox" class="prettyCheckable" data-label="Xenial Analytics" style="display:none;"></input>
+       </div>
+     </div>
+     </a>
+   </li>
+   <li role="tablist" id="accordian" aria-multiselectable="true" class="col-md-3 col-sm-6 col-xs-12"  data-toggle="collapse" data-target="#collapse">
+     <a href="#collapse" aria-controls="collapse" role="button" data-toggle="tab" id="myDropdown2" class="button">
+       <div class="checkbox has-pretty-child">
+       <div class="clearfix prettycheckbox labelright blue">
+         <input type="checkbox" class="prettyCheckable" data-label="Customer Intelligence" style="display:none;"></input>
+       </div>
+     </div>
+     </a>
+   </li>
+   <li role="tablist" id="accordian" aria-multiselectable="true" class="col-md-3 col-sm-6 col-xs-12"  data-toggle="collapse" data-target="#collapse">
+     <a href="#collapse" aria-controls="collapse" role="button" data-toggle="tab" id="myDropdown3" class="button">
+       <div class="checkbox has-pretty-child">
+       <div class="clearfix prettycheckbox labelright blue">
+         <input type="checkbox" class="prettyCheckable" data-label="Email Marketing" style="display:none;"></input>
+       </div>
+     </div>
+     </a>
+   </li>
+   <li role="tablist" id="accordian" aria-multiselectable="true" class="col-md-3 col-sm-6 col-xs-12"  data-toggle="collapse" data-target="#collapse">
+     <a href="#collapse" aria-controls="collapse" role="button" data-toggle="tab" id="myDropdown4" class="button">
+       <div class="checkbox has-pretty-child">
+       <div class="clearfix prettycheckbox labelright blue">
+         <input type="checkbox" class="prettyCheckable" data-label="Mid-Grade" style="display:none;"></input>
+       </div>
+     </div>
+     </a>
+   </li>
+</ul>
+  
 <!--EXPANDED CONTENT-->
-<div class="container">
-  <div class="row">
-    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-      <div class="panel-body col-md-12">
-        <div class="form-group">
-          <form>
+ <div class="tab-content panel-collapse tab-pane active collapse" id="collapse" aria-expanded="false">
+     <div class="panel-body col-md-12">
+         <div class="form-group">
+           <form>
+             <div class="display-inline">
+               <label for="exampleInputEmail1">Fee</label>
+               <input type="email" class="form-control" id="exampleInputEmail1" placeholder="$0.00">
+             </div>
+             <div class="display-inline">
+               <label for="exampleInputEmail1">Selling RM</label>
+               <input type="email" class="form-control" id="exampleInputEmail1" placeholder="John Doe">        
+            </div>  
+           </form>  
             <div class="display-inline">
-            <label for="exampleInputEmail1">Fee</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="$0.00">
-          </div>
-          <div class="display-inline">
-            <label for="exampleInputEmail1">Selling RM</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="John Doe">        
-          </div>  
-        </form>  
-        <div class="display-inline">
-            <h4>Fee is Required</h4> 
-            <p>A fee is required. The default fee for this program is</p>   
-          </div>    
-          <button type="button" class="btn btn-default dropdown-button">Cancel</button>
-          <button type="button" class="btn btn-primary dropdown-button">Enroll</button>
-        </div>
+              <h4>Fee is Required</h4> 
+              <p>A fee is required. The default fee for this program is</p>   
+            </div>    
+              <button type="button" class="btn btn-default dropdown-button">Cancel</button>
+              <button class="btn btn-primary dropdown-button" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Enroll</button>     
+         </div>
       </div>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="panel-body col-md-12">
-        <div class="form-group">
-          <form>
-            <div class="display-inline">
-            <label for="exampleInputEmail1">Fee</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="$0.00">
-          </div>
-            <div class="display-inline">
-            <label for="exampleInputEmail1">Selling RM</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="John Doe">    </div>      
-        </form>   
-        <div class="display-inline">  
-          <h4>Fee is Required</h4> 
-          <p>A fee is required. The default fee for this program is</p>   
-        </div> 
-          <button type="button" class="btn btn-default dropdown-button">Cancel</button>
-          <button type="button" class="btn btn-primary dropdown-button">Enroll</button>
-        </div>        
-      </div>
-    </div>
-    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-      <div class="panel-body col-md-12">
-        <div class="form-group">
-          <form>
-            <div class="display-inline">
-            <label for="exampleInputEmail1">Fee</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="$0.00">
-          </div>
-          <div class="display-inline">
-            <label for="exampleInputEmail1">Selling RM</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="John Doe">        
-          </div>  
-        </form>   
-        <div class="display-inline">
-          <h4>Fee is Required</h4> 
-          <p>A fee is required. The default fee for this program is</p>      </div>
-            <button type="button" class="btn btn-default dropdown-button">Cancel</button>
-            <button type="button" class="btn btn-primary dropdown-button">Enroll</button>
-        </div>        
-      </div>
-    </div>
-    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-      <div class="panel-body col-md-12">
-        <div class="form-group">
-          <form>
-            <div class="display-inline">
-            <label for="exampleInputEmail1">Fee</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="$0.00"></div>
-            <div class="display-inline">
-            <label for="exampleInputEmail1">Selling RM</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Harry Potter">  </div>        
-        </form>
-        <div class="display-inline">
-          <h4>Fee is Required</h4> 
-          <p>A fee is required. The default fee for this program is</p>  </div>     
-            <button type="button" class="btn btn-default dropdown-button">Cancel</button>
-            <button type="button" class="btn btn-primary dropdown-button">Enroll</button>
-        </div>        
-      </div>
-    </div>
   </div>
-</div>
+
 <!--TABLE-->
 <div class="container margin-top">
   <div class="row">
@@ -188,5 +167,10 @@
   </div>
 </div>
 
+<script>
+  $('input.prettyCheckable').each(function() {
+    $(this).prettyCheckable();
+  });
+</script>
 </body>
 </html>
