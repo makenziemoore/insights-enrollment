@@ -137,12 +137,12 @@ background:url(images/checkbox-sprites@1x.png);
   padding:25px;
   color:white;
   height:86px;
-  background-color:#36b46e;
 }
 .well p {
   display:inline-block;
   margin-top:3px;
   font-size:18px;
+  vertical-align: top;
 }
 button.close {
   margin-top:3px;
@@ -150,4 +150,7 @@ button.close {
   text-shadow:0 1px 0 #fff;
   opacity:.2;
   font-family:sans-serif;
+}
+.pole {
+  height:70px;
 }
