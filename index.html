@@ -5,8 +5,6 @@
       <link rel="stylesheet" href="styles.css" />
       <script typ="text/javascript" src="jquery.js"></script>
       <script typ="text/javascript" src="bootstrap.js"></script>
-      <script src="dropdown.js"></script>
-
   </head> 
   
    
@@ -18,7 +16,6 @@
         <a class="navbar-brand" href="#">
           <img alt="Brand" id="heartland-logo" src="images/HlandWHITERGBtransparent.png">
         </a>
-          <img alt="Brand" class="logo" src="images/XenialAnalytics-logo-color.png">
       </div>
     </div>
 </nav>
@@ -50,10 +47,10 @@
 </div>
 
 <!-- unenroll -->
-<div class="collapse" id="collapseExample2" style="background-color:#E39439;">
+<div class="collapse" id="collapseExample3" style="background-color:#E39439;">
   <div class="well text-center" style="background-color:#e39439;">
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-    	 viewBox="0 0 300 300" style="enable-background:new 0 0 300 300; background-color:#e39439; width:60px; height:60px; display:inline-block; margin-top:-10px;" xml:space="preserve">
+    	 viewBox="0 0 300 300" style="enable-background:new 0 0 300 300; background-color:#e39439; width:80px; height:69px; display:inline-block; margin-top:-10px;" xml:space="preserve">
        <style type="text/css">
          .st0{fill:#FFFFFF;stroke:#E39439;stroke-miterlimit:10;}
          .st12{fill:#E39439;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
@@ -68,81 +65,76 @@
          <rect id="XMLID_2_" x="165" y="191" class="st2" width="43" height="11"/>
        </g>
     </svg>
-    <p>You have unenrolled a merchant in this program</p> 
-    <button type="button" class="close" aria-label="Close" data-toggle="collapse" data-target="#collapseExample2">
+    <p>You have unenrolled a merchant for this program</p> 
+    <button type="button" class="close" aria-label="Close" data-toggle="collapse" data-target="#collapseExample3">x</button>
   </div>
 </div>
 
 <!--DASHBOARD-->
 <div class="container margin-top">
- <div class="row">
+  <div class="row col-md-12">
+    <img alt="Brand" class="logo" src="images/XenialAnalytics-logo-color.png">
    <h2>Enrollment</h2>
  <ul class="nav nav-tabs" role="tablist">
-   <li role="tablist" id="accordian" aria-multiselectable="true" class="col-md-3 col-sm-6 col-xs-12"  data-toggle="collapse" data-target="#collapse">
-     <a href="#collapse" aria-controls="collapse" role="button" data-toggle="tab" id="myDropdown1" class="button">
-       <div class="checkbox has-pretty-child">
-       <div class="clearfix prettycheckbox labelright blue">
-         <input type="checkbox" class="prettyCheckable" data-label="Xenial Analytics" style="display:none;"></input>
-       </div>
-     </div>
+   <li class="col-md-3 col-sm-6 col-xs-12" role="tablist" id="accordian" aria-multiselectable="true"  data-toggle="collapse" data-target="#collapse">
+     <a href="#collapse" aria-controls="collapse" role="button" data-toggle="tab" id="myDropdown1" class="button">    
+         <input type="checkbox" class="prettyCheckable enrolled" data-label="Xenial Analytics" style="display:none;"></input>
      </a>
    </li>
-   <li role="tablist" id="accordian" aria-multiselectable="true" class="col-md-3 col-sm-6 col-xs-12"  data-toggle="collapse" data-target="#collapse">
+   <li class="col-md-3 col-sm-6 col-xs-12" role="tablist" id="accordian" aria-multiselectable="true" data-toggle="collapse" data-target="#collapse">
      <a href="#collapse" aria-controls="collapse" role="button" data-toggle="tab" id="myDropdown2" class="button">
-       <div class="checkbox has-pretty-child">
-       <div class="clearfix prettycheckbox labelright blue">
-         <input type="checkbox" class="prettyCheckable" data-label="Customer Intelligence" style="display:none;"></input>
-       </div>
-     </div>
+         <input type="checkbox" class="prettyCheckable unenrolled" data-label="Customer Intelligence" style="display:none;"></input>
      </a>
    </li>
-   <li role="tablist" id="accordian" aria-multiselectable="true" class="col-md-3 col-sm-6 col-xs-12"  data-toggle="collapse" data-target="#collapse">
+   <li class="col-md-3 col-sm-6 col-xs-12" role="tablist" id="accordian" aria-multiselectable="true" data-toggle="collapse" data-target="#collapse">
      <a href="#collapse" aria-controls="collapse" role="button" data-toggle="tab" id="myDropdown3" class="button">
-       <div class="checkbox has-pretty-child">
-       <div class="clearfix prettycheckbox labelright blue">
-         <input type="checkbox" class="prettyCheckable" data-label="Email Marketing" style="display:none;"></input>
-       </div>
-     </div>
+         <input type="checkbox" class="prettyCheckable unenrolled" data-label="Email Marketing" style="display:none;"></input>
      </a>
    </li>
-   <li role="tablist" id="accordian" aria-multiselectable="true" class="col-md-3 col-sm-6 col-xs-12"  data-toggle="collapse" data-target="#collapse">
+   <li class="col-md-3 col-sm-6 col-xs-12" role="tablist" id="accordian" aria-multiselectable="true" data-toggle="collapse" data-target="#collapse">
      <a href="#collapse" aria-controls="collapse" role="button" data-toggle="tab" id="myDropdown4" class="button"data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
-       <div class="checkbox has-pretty-child">
-       <div class="clearfix prettycheckbox labelright blue">
-         <input type="checkbox" class="prettyCheckable" data-label="Mid-Grade" style="display:none;"></input>
-       </div>
-     </div>
-     </a>
-   </li>
-</ul>
+         <input type="checkbox" class="prettyCheckable enrolled" data-label="Mid-Grade" style="display:none;"></input>
+       </a>
+     </li>
+  </ul>
+</div>
+</div>
+
   
 <!--EXPANDED CONTENT-->
- <div class="tab-content panel-collapse tab-pane active collapse" id="collapse" aria-expanded="false">
-     <div class="panel-body col-md-12">
-         <div class="form-group">
-           <form>
-             <div class="display-inline">
-               <label for="exampleInputEmail1">Fee</label>
-               <input type="email" class="form-control" id="exampleInputEmail1" placeholder="$0.00">
-             </div>
-             <div class="display-inline">
-               <label for="exampleInputEmail1">Selling RM</label>
-               <input type="email" class="form-control" id="exampleInputEmail1" placeholder="John Doe">        
-            </div>  
-           </form>  
-            <div class="display-inline">
-              <h4>Fee is Required</h4> 
-              <p>A fee is required. The default fee for this program is</p>   
-            </div>    
-              <button type="button" class="btn btn-default dropdown-button">Cancel</button>
-              <button class="btn btn-primary dropdown-button" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample2">Enroll</button>     
-         </div>
-      </div>
+<div class="container">
+  <div class="row  col-md-12">
+    <div class="tab-content panel-collapse tab-pane active collapse" id="collapse" aria-expanded="false">
+       <div class="panel-body">
+           <div class="form-group">
+             <form>
+                 <div class="col-md-4">
+                   <label for="exampleInputEmail1">Fee</label>
+                   <input type="email" class="form-control" id="exampleInputEmail1" placeholder="$0.00">
+                 </div>
+                 <div class="col-md-4">
+                   <label for="exampleInputEmail1">Selling RM</label>
+                   <input type="email" class="form-control" id="exampleInputEmail1" placeholder="John Doe">        
+                </div>     
+                <div class="col-md-4">
+                  <h4>Fee is Required</h4> 
+                  <p>A fee is required. The default fee for this program is</p>   
+                </div>    
+                 </div>
+                <div class="row col-md-12">
+                  <button type="button" class="btn btn-default dropdown-button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">Unenroll</button>
+                  <button class="btn btn-primary dropdown-button" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample2">Enroll</button>    
+                </div> 
+              </div>
+          </form>      
+        </div>
+     </div>
   </div>
+</div>
 
 <!--TABLE-->
 <div class="container margin-top">
-  <div class="row">
+  <div class="row col-md-12">
     <h2>Enrollment History</h2>
       <table class="table table-striped">
         <thead>
@@ -192,6 +184,17 @@
   $('input.prettyCheckable').each(function() {
     $(this).prettyCheckable();
   });
+  $(document).ready(function(){
+     $('button.btn-default').click(function(){
+          $('div.prettycheckbox').addClass('unenrolled').removeClass('enrolled');
+     });
+   }); 
+   $(document).ready(function(){
+   $('button.btn-primary').click(function(){
+        $('div.prettycheckbox').addClass('enrolled').removeClass('unenrolled');
+   });
+   }); 
 </script>
+
 </body>
 </html>

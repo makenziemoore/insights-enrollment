@@ -4,16 +4,16 @@ h2 {
 h4 {
   font-weight:bold;
 }
-form {
-  display:inline-block;
-}
 a{
   color:white;
 }
 a:hover {
   color:white;
 }
-
+.col-md-12 {
+  margin:auto;
+  float:none;
+}
 /*nav*/
 .navbar-brand {
   padding:5px;
@@ -45,33 +45,41 @@ a:hover {
   right:0;
   width:100%;
 }
-.prettycheckbox>a.checked {
-  background-position: 0 -60px;
-}
-.checkbox input[type=checkbox] {
-position:absolute;
-margin-left:-20px;
-}
 .prettycheckbox>a {
-background:url(images/checkbox-sprites@1x.png);
+background:url(images/checked-fill.svg);
+margin-right:8px;
 }
-.checkbox label {
-  padding-left:0px;
-  cursor:pointer;
-  color:white;
-  font-size:17px;
+.prettycheckbox.unenrolled>a {
+background:url(images/x.svg);
+margin-right:8px;
+}
+.prettycheckbox.enrolled>a {
+background:url(images/checked-fill.svg);
+margin-right:8px;
+}
+.checkbox {
+  margin-top:0px;
+  margin-bottom:0px;
 }
 .prettycheckbox label {
   display:inline-block;
   max-width:100%;
   margin:3px 0px;
+  padding-left:0px;
+  cursor:pointer;
+  color:white;
+  font-size:17px;
+  font-weight:initial;
 }
 .button {
-  height:90px;
+  height:70px;
 }
 .nav-tabs {
   background:transparent;
   border:none;
+}
+.nav-tabs li {
+  padding:5px 3px;
 }
 .nav-tabs > li > a {
   padding:18px 23px;
@@ -81,14 +89,22 @@ background:url(images/checkbox-sprites@1x.png);
   outline-style:solid;
   outline-offset: 0px;
   outline-color: #efefef;
-  outline-width: 10px;
+  outline-width: 8px;
   border:0px solid transparent;
+}
+@media screen and (max-width:1200px) and (min-width:700px) {
+  .col-md-3 {
+    width:50%;
+  }
 }
 
 /*expanded content*/
 .display-inline {
   display:inline-block;
   margin:10px;
+}
+.display-block {
+  display:block;
 }
 .dropdown {
   position:static;
@@ -107,9 +123,9 @@ background:url(images/checkbox-sprites@1x.png);
 .dropdown-button {
   width:10%;
   display:inline-block;
+}
+.btn-primary {
   float:right;
-  margin:10px;
-  margin-top:40px;
 }
 .form-control {
   margin-bottom:10px;
@@ -117,7 +133,7 @@ background:url(images/checkbox-sprites@1x.png);
 .panel-body {
   background-color:#efefef;
   float:none;
-  margin-top:10px;
+  margin-top:4px;
 }
 #myDropdown1 {
   background-color:#184b86;
@@ -137,6 +153,7 @@ background:url(images/checkbox-sprites@1x.png);
   padding:25px;
   color:white;
   height:86px;
+  margin-bottom:0px;
 }
 .well p {
   display:inline-block;
