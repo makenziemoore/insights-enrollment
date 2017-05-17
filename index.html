@@ -41,13 +41,29 @@
      </svg>
     <p>Congratulations! You have successfully enrolled a merchant in this program</p>  
     <button type="button" class="close" aria-label="Close" data-toggle="collapse" data-target="#collapseExample">
-      x
     </button>
   </div>
 </div>
 
+<!-- unenroll modal-->
+<div class="container">
+  <div class="row col-md-12">
+<div class="modal fade" tabindex="-1" id="myModal" role="dialogue">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <button type="button" class="close" aria-label="Close" data-toggle="collapse" data-target="#collapseExample4" style="display:none"></button></br>
+    <p>Are you sure you want to unenroll the merchant?</p>     
+    <button type="button" class="btn btn-default col-md-6 check-icon" data-dismiss="modal" data-toggle="collapse">No, Cancel</button>
+      <button class="btn btn-primary dropdown-button col-md-6 x-icon" type="button" data-dismiss="modal" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">Yes, I'm Sure</button>    
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <!-- unenroll -->
-<div class="collapse" id="collapseExample3" style="background-color:#E39439;">
+<div class="collapse" id="collapseExample3">
   <div class="well text-center" style="background-color:#e39439;">
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
     	 viewBox="0 0 300 300" style="enable-background:new 0 0 300 300; background-color:#e39439; width:80px; height:69px; display:inline-block; margin-top:-10px;" xml:space="preserve">
@@ -65,8 +81,8 @@
          <rect id="XMLID_2_" x="165" y="191" class="st2" width="43" height="11"/>
        </g>
     </svg>
-    <p>You have unenrolled a merchant for this program</p> 
-    <button type="button" class="close" aria-label="Close" data-toggle="collapse" data-target="#collapseExample3">x</button>
+    <p>You have successfully unenrolled the merchant</p> 
+    <button type="button" class="close" aria-label="Close" data-toggle="collapse" data-target="#collapseExample3"></button>
   </div>
 </div>
 
@@ -122,8 +138,8 @@
                 </div>    
                  </div>
                 <div class="row col-md-12">
-                  <button type="button" class="btn btn-default dropdown-button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">Unenroll</button>
-                  <button class="btn btn-primary dropdown-button" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample2">Enroll</button>    
+                  <button type="button" class="btn btn-default dropdown-button x-icon" data-toggle="modal" data-target="#myModal">Unenroll</button>
+                  <button class="btn btn-primary dropdown-button check-icon" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample2">Enroll</button>    
                 </div> 
               </div>
           </form>      
@@ -185,12 +201,12 @@
     $(this).prettyCheckable();
   });
   $(document).ready(function(){
-     $('button.btn-default').click(function(){
+     $('button.x-icon').click(function(){
           $('div.prettycheckbox').addClass('unenrolled').removeClass('enrolled');
      });
    }); 
    $(document).ready(function(){
-   $('button.btn-primary').click(function(){
+   $('button.check-icon').click(function(){
         $('div.prettycheckbox').addClass('enrolled').removeClass('unenrolled');
    });
    }); 

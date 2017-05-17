@@ -149,11 +149,27 @@ margin-right:8px;
 } 
 
 /*modal*/
+#collapseExample4 .well {
+  height:120px;
+}
+#collapseExample4 .btn {
+margin:auto;
+float:none;
+}
+.modal-body button {
+  width:200px;
+  float:none;
+  margin:20px;
+}
+.modal-body {
+  font-size:18px;
+}
 .well {
   padding:25px;
   color:white;
   height:86px;
   margin-bottom:0px;
+  border:none;
 }
 .well p {
   display:inline-block;
@@ -161,12 +177,17 @@ margin-right:8px;
   font-size:18px;
   vertical-align: top;
 }
+.close {
+  opacity:.6;
+}
 button.close {
-  margin-top:3px;
-  font-weight:bold;
-  text-shadow:0 1px 0 #fff;
-  opacity:.2;
-  font-family:sans-serif;
+  background-image:url(images/x-button.svg);
+  width:30px;
+  height:30px;
+  background-repeat:no-repeat;
+}
+button.close:hover {
+  background-image:url(images/x-button-hover.svg);
 }
 .pole {
   height:70px;
