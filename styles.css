@@ -45,17 +45,17 @@ a:hover {
   right:0;
   width:100%;
 }
-.prettycheckbox>a {
-background:url(images/checked-fill.svg);
-margin-right:8px;
-}
-.prettycheckbox.unenrolled>a {
+li .prettycheckbox>a {
 background:url(images/x.svg);
-margin-right:8px;
+margin:5px 8px 0 0;
+width:20px;
+height:20px;
 }
-.prettycheckbox.enrolled>a {
+a.active .prettycheckbox>a {
 background:url(images/checked-fill.svg);
 margin-right:8px;
+width:20px;
+height:20px;
 }
 .checkbox {
   margin-top:0px;
@@ -91,6 +91,44 @@ margin-right:8px;
   outline-color: #efefef;
   outline-width: 8px;
   border:0px solid transparent;
+  background-color:#888888;
+} 
+.status {
+  background-color:gray;
+}
+#myDropdown1.active {
+  background-color:#184b86;
+} 
+#myDropdown2.active {
+  background-color:#3989e3;
+}
+#myDropdown3.active {
+  background-color:#85c4b9;
+} 
+#myDropdown4.active {
+  background-color:#36b46e;
+} 
+#myDropdown1.inactive {
+  background-color:gray;
+} 
+#myDropdown2.inactive {
+  background-color:gray;
+}
+#myDropdown3.inactive {
+  background-color:gray;
+} 
+#myDropdown4.inactive {
+  background-color:gray;
+} 
+#myDropdown1:hover,
+#myDropdown2:hover,
+#myDropdown3:hover,
+#myDropdown4:hover,
+#myDropdown1:focus,
+#myDropdown2:active,
+#myDropdown3:active,
+#myDropdown4:active {
+  background-color:#888888;
 }
 @media screen and (max-width:1200px) and (min-width:700px) {
   .col-md-3 {
@@ -135,18 +173,6 @@ margin-right:8px;
   float:none;
   margin-top:4px;
 }
-#myDropdown1 {
-  background-color:#184b86;
-} 
-#myDropdown2 {
-  background-color:#3989e3;
-}
-#myDropdown3 {
-  background-color:#85c4b9;
-} 
-#myDropdown4 {
-  background-color:#36b46e;
-} 
 
 /*modal*/
 #collapseExample4 .well {

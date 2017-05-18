@@ -46,6 +46,15 @@
 </div>
 
 <!-- unenroll modal-->
+<div class="collapse" id="collapseExample4">
+  <div class="well text-center" style="background-color:#ffd237;">
+    <p>Are you sure you want to unenroll the merchant?</p> 
+    <button type="button" class="close" aria-label="Close" data-toggle="collapse" data-target="#collapseExample4" style="margin-top:17px;"></button></br>
+    <button type="button" class="btn btn-default dropdown-button" aria-label="Close" data-toggle="collapse" data-target="#collapseExample4" style="width:10%; display:inline-block;">No, Cancel</button>
+      <button class="btn btn-primary dropdown-button" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3" style="width:10%; display:inline-block;">Yes, I'm Sure</button>    
+  </div>
+</div>
+<!-- unenroll modal 2-->
 <div class="container">
   <div class="row col-md-12">
 <div class="modal fade" tabindex="-1" id="myModal" role="dialogue">
@@ -93,22 +102,22 @@
    <h2>Enrollment</h2>
  <ul class="nav nav-tabs" role="tablist">
    <li class="col-md-3 col-sm-6 col-xs-12" role="tablist" id="accordian" aria-multiselectable="true"  data-toggle="collapse" data-target="#collapse">
-     <a href="#collapse" aria-controls="collapse" role="button" data-toggle="tab" id="myDropdown1" class="button">    
+     <a href="#collapse" aria-controls="collapse" role="button" data-toggle="tab" id="myDropdown1" class="button status">    
          <input type="checkbox" class="prettyCheckable enrolled" data-label="Xenial Analytics" style="display:none;"></input>
      </a>
    </li>
    <li class="col-md-3 col-sm-6 col-xs-12" role="tablist" id="accordian" aria-multiselectable="true" data-toggle="collapse" data-target="#collapse">
-     <a href="#collapse" aria-controls="collapse" role="button" data-toggle="tab" id="myDropdown2" class="button">
+     <a href="#collapse" aria-controls="collapse" role="button" data-toggle="tab" id="myDropdown2" class="button status inactive">
          <input type="checkbox" class="prettyCheckable unenrolled" data-label="Customer Intelligence" style="display:none;"></input>
      </a>
    </li>
    <li class="col-md-3 col-sm-6 col-xs-12" role="tablist" id="accordian" aria-multiselectable="true" data-toggle="collapse" data-target="#collapse">
-     <a href="#collapse" aria-controls="collapse" role="button" data-toggle="tab" id="myDropdown3" class="button">
+     <a href="#collapse" aria-controls="collapse" role="button" data-toggle="tab" id="myDropdown3" class="button status">
          <input type="checkbox" class="prettyCheckable unenrolled" data-label="Email Marketing" style="display:none;"></input>
      </a>
    </li>
    <li class="col-md-3 col-sm-6 col-xs-12" role="tablist" id="accordian" aria-multiselectable="true" data-toggle="collapse" data-target="#collapse">
-     <a href="#collapse" aria-controls="collapse" role="button" data-toggle="tab" id="myDropdown4" class="button"data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+     <a href="#collapse" aria-controls="collapse" role="button" data-toggle="tab" id="myDropdown4" class="button status"data-toggle="collapse status" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
          <input type="checkbox" class="prettyCheckable enrolled" data-label="Mid-Grade" style="display:none;"></input>
        </a>
      </li>
@@ -138,6 +147,7 @@
                 </div>    
                  </div>
                 <div class="row col-md-12">
+                <!--  <button type="button" class="btn btn-default dropdown-button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample3">Unenroll</button>-->
                   <button type="button" class="btn btn-default dropdown-button x-icon" data-toggle="modal" data-target="#myModal">Unenroll</button>
                   <button class="btn btn-primary dropdown-button check-icon" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample2">Enroll</button>    
                 </div> 
@@ -200,16 +210,18 @@
   $('input.prettyCheckable').each(function() {
     $(this).prettyCheckable();
   });
-  $(document).ready(function(){
-     $('button.x-icon').click(function(){
-          $('div.prettycheckbox').addClass('unenrolled').removeClass('enrolled');
-     });
-   }); 
+
    $(document).ready(function(){
    $('button.check-icon').click(function(){
-        $('div.prettycheckbox').addClass('enrolled').removeClass('unenrolled');
+        $('a.status').addClass('active').removeClass('inactive');
    });
-   }); 
+    }); 
+    $(document).ready(function(){
+    $('button.x-icon').click(function(){
+         $('a.status').addClass('inactive').removeClass('active');
+    });
+     }); 
+  
 </script>
 
 </body>
